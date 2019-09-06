@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Unity
+.DS_Store
+Library
+Temp
+*.csproj
+*.pidb
+*.unityproj
+*.sln
+*.userprefs
+Build
+/[Oo]bj/

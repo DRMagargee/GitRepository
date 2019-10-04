@@ -9,9 +9,11 @@ public class failDetect : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Detector"))
+        if (other.gameObject.name == "Player")
         {
-            gameObject.transform.position = new Vector3 (0.0f, 1.0f, 0.0f);
+            other.gameObject.transform.position = new Vector3(0.0f, 1.0f, 0.0f);
         }
     }
+
+    
 }

@@ -68,6 +68,7 @@ public class MouseLookScript : MonoBehaviour {
 */
 void FixedUpdate(){
 
+
 	/*
 	 * Reduxing mouse sensitvity if we are aiming.
 	 */

@@ -9,6 +9,7 @@ TagManager:
   - Dummie
   - LevelPart
   - Detector
+  - Weapon
   layers:
   - Default
   - TransparentFX

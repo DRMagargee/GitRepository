@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class failDetect : MonoBehaviour
 {
-
+    public static failDetect instance;
     public Transform respawn;
     public int up = 0;
+    public Renderer glow;
+
+
+    private void Start()
+    {
+        instance = this;
+    }
 
     void Update()
     {
         if (up > 0)
         {
             up = up - 1;
+            glow.enabled = false;
+        }
+
+        if (up == 0)
+            glow.enabled = true;
+
+        if (Input.GetKeyDown("p"))
+        {
+            up = 300;
         }
     }
 
@@ -26,4 +42,6 @@ public class failDetect : MonoBehaviour
             Debug.Log("Player experienced the big oof");
         }
     }
+
+    
 }

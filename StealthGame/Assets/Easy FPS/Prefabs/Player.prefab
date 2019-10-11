@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 13695512}
   - component: {fileID: 2306104}
   - component: {fileID: 5427112}
+  - component: {fileID: 69529368383394793}
   - component: {fileID: 11415148}
   - component: {fileID: 11478776}
   - component: {fileID: 11414154}
@@ -311,6 +312,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &69529368383394793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679f03e9e7d18974a99f6f1043a4202a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0.5
+  range: 100
+  duration: 10
+  damage: 3
 --- !u!114 &11415148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,9 +403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentGun: {fileID: 0}
   gunsIHave:
-  - NewGun_semi
-  - NewGun_auto
-  icons: []
+  - Stun_Gun
+  icons:
+  - {fileID: 2800000, guid: 5fe1306cbd6368b4f9b7487b7c541eb8, type: 3}
   switchWeaponCooldown: 0
   menuStyle: 0
   spacing: 10

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3047380054881157301}
   - component: {fileID: 3047380054881157300}
   - component: {fileID: 3047380054881157307}
-  - component: {fileID: 3047380054881157305}
+  - component: {fileID: 3019435039605369510}
   - component: {fileID: 3047380054881157306}
   m_Layer: 0
   m_Name: failzone
@@ -80,7 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3047380054881157305
+--- !u!114 &3019435039605369510
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,10 +89,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3047380054881157304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2f01c96941c4fa41bb9c7fa3e2a1f42, type: 3}
+  m_Script: {fileID: 11500000, guid: aa218b642b4a12748931760eb96768a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   respawn: {fileID: 0}
+  up: 0
+  glow: {fileID: 3047380056381260136}
 --- !u!65 &3047380054881157306
 BoxCollider:
   m_ObjectHideFlags: 0

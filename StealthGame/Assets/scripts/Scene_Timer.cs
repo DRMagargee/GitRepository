@@ -14,7 +14,7 @@ public class Scene_Timer : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            SceneManager.LoadScene("Felipe_scene2");
+            SceneManager.LoadScene("Level 1");
         }
     }
 }

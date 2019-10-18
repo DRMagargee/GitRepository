@@ -33,7 +33,7 @@ public class failDetect : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.name == "Player" && up == 0)
         {
@@ -43,5 +43,6 @@ public class failDetect : MonoBehaviour
         }
     }
 
-    
+
 }
+

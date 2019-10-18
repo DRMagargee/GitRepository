@@ -3,7 +3,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Scene_Timer : MonoBehaviour
+public class Scene_Timer3 : MonoBehaviour
 {
     public float timer = 5f;
     
@@ -14,7 +14,7 @@ public class Scene_Timer : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene("Felipe_Menu scene");
         }
     }
 }

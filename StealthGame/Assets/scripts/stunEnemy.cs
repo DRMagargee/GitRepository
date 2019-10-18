@@ -12,6 +12,7 @@ public class stunEnemy : MonoBehaviour
     public float melee = 1f;
     public float duration = 10f;
     public float damage = 3f;
+    public float type;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +25,15 @@ public class stunEnemy : MonoBehaviour
     {
         cooldownRemaining -= Time.deltaTime;
         cooldownRemaining2 -= Time.deltaTime;
+        type = 0f;
 
-        if (Input.GetMouseButton(0) && cooldownRemaining <= 0)
+        if (Input.GetKeyDown("q"))
+        {
+            range = 2.0f;
+            type = 1f;
+        }
+
+        if (Input.GetMouseButton(0) && cooldownRemaining <= 0 || Input.GetKeyDown("q") && cooldownRemaining2 <= 0)
         {
             cooldownRemaining = cooldown;
 
@@ -43,13 +51,15 @@ public class stunEnemy : MonoBehaviour
 
                 if (t != null)
                 {
-                    t.hit();
+                    t.hit(type);
                 }
 
 
 
             }
         }
+
+        range = 100.0f;
         /*
         if (Input.GetKeyDown("q") && cooldownRemaining2 <= 0)
         {
